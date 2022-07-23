@@ -1,0 +1,2044 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "transformation": [
+                0.7160133,
+                0.0,
+                0.6980865,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.6980865,
+                0.0,
+                0.7160133,
+                0.0,
+                -4.0952396,
+                1.8000135,
+                1.7569253,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164,
+                -3.9999997,
+                0.0,
+                0.0,
+                3.9999997,
+                -0.0016164,
+                0.0,
+                0.0,
+                1.4901161193847656e-8,
+                0.3159114,
+                1.0
+            ]
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                2.9802322387695326e-8,
+                0.4999999,
+                5.960464477539065e-8,
+                1.0
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.5,
+                1.0,
+                -1.4901161193847656e-8,
+                1.0
+            ]
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.4999999,
+                0.75,
+                -1.25,
+                1.0
+            ]
+        },
+        "75": {
+            "link": {
+                "name": "SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                -0.0099999,
+                -0.0,
+                0.0,
+                0.0,
+                1.1920928955078125e-7,
+                1.0446052,
+                1.0
+            ],
+            "deleted": true
+        },
+        "76": {
+            "link": {
+                "name": "SwatGuy.001<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "75",
+            "deleted": true
+        },
+        "77": {
+            "link": {
+                "name": "mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "75",
+            "deleted": true
+        },
+        "78": {
+            "link": {
+                "name": "mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "77",
+            "deleted": true
+        },
+        "79": {
+            "link": {
+                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "78",
+            "deleted": true
+        },
+        "80": {
+            "link": {
+                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "79",
+            "deleted": true
+        },
+        "81": {
+            "link": {
+                "name": "mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "80",
+            "deleted": true
+        },
+        "82": {
+            "link": {
+                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "81",
+            "deleted": true
+        },
+        "83": {
+            "link": {
+                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "82",
+            "deleted": true
+        },
+        "84": {
+            "link": {
+                "name": "mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "80",
+            "deleted": true
+        },
+        "85": {
+            "link": {
+                "name": "mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "84",
+            "deleted": true
+        },
+        "86": {
+            "link": {
+                "name": "mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "85",
+            "deleted": true
+        },
+        "87": {
+            "link": {
+                "name": "mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "86",
+            "deleted": true
+        },
+        "88": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "87",
+            "deleted": true
+        },
+        "89": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "88",
+            "deleted": true
+        },
+        "90": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb3<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "89",
+            "deleted": true
+        },
+        "91": {
+            "link": {
+                "name": "mixamorig:LeftHandThumb4<mixamorig:LeftHandThumb3<mixamorig:LeftHandThumb2<mixamorig:LeftHandThumb1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "90",
+            "deleted": true
+        },
+        "92": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "87",
+            "deleted": true
+        },
+        "93": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "92",
+            "deleted": true
+        },
+        "94": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex3<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "93",
+            "deleted": true
+        },
+        "95": {
+            "link": {
+                "name": "mixamorig:LeftHandIndex4<mixamorig:LeftHandIndex3<mixamorig:LeftHandIndex2<mixamorig:LeftHandIndex1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "94",
+            "deleted": true
+        },
+        "96": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "87",
+            "deleted": true
+        },
+        "97": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "96",
+            "deleted": true
+        },
+        "98": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle3<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "97",
+            "deleted": true
+        },
+        "99": {
+            "link": {
+                "name": "mixamorig:LeftHandMiddle4<mixamorig:LeftHandMiddle3<mixamorig:LeftHandMiddle2<mixamorig:LeftHandMiddle1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "98",
+            "deleted": true
+        },
+        "100": {
+            "link": {
+                "name": "mixamorig:LeftHandRing1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "87",
+            "deleted": true
+        },
+        "101": {
+            "link": {
+                "name": "mixamorig:LeftHandRing2<mixamorig:LeftHandRing1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "100",
+            "deleted": true
+        },
+        "102": {
+            "link": {
+                "name": "mixamorig:LeftHandRing3<mixamorig:LeftHandRing2<mixamorig:LeftHandRing1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "101",
+            "deleted": true
+        },
+        "103": {
+            "link": {
+                "name": "mixamorig:LeftHandRing4<mixamorig:LeftHandRing3<mixamorig:LeftHandRing2<mixamorig:LeftHandRing1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "102",
+            "deleted": true
+        },
+        "104": {
+            "link": {
+                "name": "mixamorig:LeftHandPinky1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "87",
+            "deleted": true
+        },
+        "105": {
+            "link": {
+                "name": "mixamorig:LeftHandPinky2<mixamorig:LeftHandPinky1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "104",
+            "deleted": true
+        },
+        "106": {
+            "link": {
+                "name": "mixamorig:LeftHandPinky3<mixamorig:LeftHandPinky2<mixamorig:LeftHandPinky1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "105",
+            "deleted": true
+        },
+        "107": {
+            "link": {
+                "name": "mixamorig:LeftHandPinky4<mixamorig:LeftHandPinky3<mixamorig:LeftHandPinky2<mixamorig:LeftHandPinky1<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "106",
+            "deleted": true
+        },
+        "108": {
+            "link": {
+                "name": "mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "80",
+            "deleted": true
+        },
+        "109": {
+            "link": {
+                "name": "mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "108",
+            "deleted": true
+        },
+        "110": {
+            "link": {
+                "name": "mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "109",
+            "deleted": true
+        },
+        "111": {
+            "link": {
+                "name": "mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "110",
+            "deleted": true
+        },
+        "112": {
+            "link": {
+                "name": "mixamorig:RightHandThumb1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "113": {
+            "link": {
+                "name": "mixamorig:RightHandThumb2<mixamorig:RightHandThumb1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "112",
+            "deleted": true
+        },
+        "114": {
+            "link": {
+                "name": "mixamorig:RightHandThumb3<mixamorig:RightHandThumb2<mixamorig:RightHandThumb1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "113",
+            "deleted": true
+        },
+        "115": {
+            "link": {
+                "name": "mixamorig:RightHandThumb4<mixamorig:RightHandThumb3<mixamorig:RightHandThumb2<mixamorig:RightHandThumb1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "114",
+            "deleted": true
+        },
+        "116": {
+            "link": {
+                "name": "mixamorig:RightHandIndex1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "117": {
+            "link": {
+                "name": "mixamorig:RightHandIndex2<mixamorig:RightHandIndex1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "116",
+            "deleted": true
+        },
+        "118": {
+            "link": {
+                "name": "mixamorig:RightHandIndex3<mixamorig:RightHandIndex2<mixamorig:RightHandIndex1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "117",
+            "deleted": true
+        },
+        "119": {
+            "link": {
+                "name": "mixamorig:RightHandIndex4<mixamorig:RightHandIndex3<mixamorig:RightHandIndex2<mixamorig:RightHandIndex1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "118",
+            "deleted": true
+        },
+        "120": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "121": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "120",
+            "deleted": true
+        },
+        "122": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle3<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "121",
+            "deleted": true
+        },
+        "123": {
+            "link": {
+                "name": "mixamorig:RightHandMiddle4<mixamorig:RightHandMiddle3<mixamorig:RightHandMiddle2<mixamorig:RightHandMiddle1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "122",
+            "deleted": true
+        },
+        "124": {
+            "link": {
+                "name": "mixamorig:RightHandRing1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "125": {
+            "link": {
+                "name": "mixamorig:RightHandRing2<mixamorig:RightHandRing1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "124",
+            "deleted": true
+        },
+        "126": {
+            "link": {
+                "name": "mixamorig:RightHandRing3<mixamorig:RightHandRing2<mixamorig:RightHandRing1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "125",
+            "deleted": true
+        },
+        "127": {
+            "link": {
+                "name": "mixamorig:RightHandRing4<mixamorig:RightHandRing3<mixamorig:RightHandRing2<mixamorig:RightHandRing1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "126",
+            "deleted": true
+        },
+        "128": {
+            "link": {
+                "name": "mixamorig:RightHandPinky1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "129": {
+            "link": {
+                "name": "mixamorig:RightHandPinky2<mixamorig:RightHandPinky1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "128",
+            "deleted": true
+        },
+        "130": {
+            "link": {
+                "name": "mixamorig:RightHandPinky3<mixamorig:RightHandPinky2<mixamorig:RightHandPinky1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "129",
+            "deleted": true
+        },
+        "131": {
+            "link": {
+                "name": "mixamorig:RightHandPinky4<mixamorig:RightHandPinky3<mixamorig:RightHandPinky2<mixamorig:RightHandPinky1<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "130",
+            "deleted": true
+        },
+        "132": {
+            "link": {
+                "name": "Rifle<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "111",
+            "deleted": true
+        },
+        "133": {
+            "link": {
+                "name": "Sniper_Ammo<Rifle<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "132",
+            "deleted": true
+        },
+        "134": {
+            "link": {
+                "name": "Sniper_Rifle<Rifle<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "132",
+            "deleted": true
+        },
+        "135": {
+            "link": {
+                "name": "Sniper_Scope<Rifle<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "132",
+            "deleted": true
+        },
+        "136": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "77",
+            "deleted": true
+        },
+        "137": {
+            "link": {
+                "name": "mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "136",
+            "deleted": true
+        },
+        "138": {
+            "link": {
+                "name": "mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "137",
+            "deleted": true
+        },
+        "139": {
+            "link": {
+                "name": "mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "138",
+            "deleted": true
+        },
+        "140": {
+            "link": {
+                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "139",
+            "deleted": true
+        },
+        "141": {
+            "link": {
+                "name": "mixamorig:RightUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "77",
+            "deleted": true
+        },
+        "142": {
+            "link": {
+                "name": "mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "141",
+            "deleted": true
+        },
+        "143": {
+            "link": {
+                "name": "mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "142",
+            "deleted": true
+        },
+        "144": {
+            "link": {
+                "name": "mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "143",
+            "deleted": true
+        },
+        "145": {
+            "link": {
+                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            },
+            "parent": "144",
+            "deleted": true
+        },
+        "164": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\knight.glb"
+            },
+            "name": "Knight",
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                -0.0099999,
+                -0.0,
+                0.0,
+                0.0,
+                8.940696716308594e-8,
+                0.9872094,
+                1.0
+            ],
+            "deleted": true
+        },
+        "165": {
+            "link": {
+                "name": "arms_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "166": {
+            "link": {
+                "name": "chest_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "167": {
+            "link": {
+                "name": "face_plate_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "168": {
+            "link": {
+                "name": "head_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "169": {
+            "link": {
+                "name": "hip_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "170": {
+            "link": {
+                "name": "legs_human_knight<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "171": {
+            "link": {
+                "name": "root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "164",
+            "deleted": true
+        },
+        "172": {
+            "link": {
+                "name": "pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "171",
+            "deleted": true
+        },
+        "173": {
+            "link": {
+                "name": "thigh_l<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "172",
+            "deleted": true
+        },
+        "174": {
+            "link": {
+                "name": "calf_l<thigh_l<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "173",
+            "deleted": true
+        },
+        "175": {
+            "link": {
+                "name": "foot_l<calf_l<thigh_l<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "174",
+            "deleted": true
+        },
+        "176": {
+            "link": {
+                "name": "ball_l<foot_l<calf_l<thigh_l<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "175",
+            "deleted": true
+        },
+        "177": {
+            "link": {
+                "name": "thigh_r<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "172",
+            "deleted": true
+        },
+        "178": {
+            "link": {
+                "name": "calf_r<thigh_r<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "177",
+            "deleted": true
+        },
+        "179": {
+            "link": {
+                "name": "foot_r<calf_r<thigh_r<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "178",
+            "deleted": true
+        },
+        "180": {
+            "link": {
+                "name": "ball_r<foot_r<calf_r<thigh_r<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "179",
+            "deleted": true
+        },
+        "181": {
+            "link": {
+                "name": "spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "172",
+            "deleted": true
+        },
+        "182": {
+            "link": {
+                "name": "spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "181",
+            "deleted": true
+        },
+        "183": {
+            "link": {
+                "name": "spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "182",
+            "deleted": true
+        },
+        "184": {
+            "link": {
+                "name": "clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "183",
+            "deleted": true
+        },
+        "185": {
+            "link": {
+                "name": "upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "184",
+            "deleted": true
+        },
+        "186": {
+            "link": {
+                "name": "lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "185",
+            "deleted": true
+        },
+        "187": {
+            "link": {
+                "name": "hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "186",
+            "deleted": true
+        },
+        "188": {
+            "link": {
+                "name": "thumb_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "187",
+            "deleted": true
+        },
+        "189": {
+            "link": {
+                "name": "thumb_02_l<thumb_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "188",
+            "deleted": true
+        },
+        "190": {
+            "link": {
+                "name": "thumb_03_l<thumb_02_l<thumb_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "189",
+            "deleted": true
+        },
+        "191": {
+            "link": {
+                "name": "index_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "187",
+            "deleted": true
+        },
+        "192": {
+            "link": {
+                "name": "index_02_l<index_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "191",
+            "deleted": true
+        },
+        "193": {
+            "link": {
+                "name": "index_03_l<index_02_l<index_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "192",
+            "deleted": true
+        },
+        "194": {
+            "link": {
+                "name": "middle_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "187",
+            "deleted": true
+        },
+        "195": {
+            "link": {
+                "name": "middle_02_l<middle_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "194",
+            "deleted": true
+        },
+        "196": {
+            "link": {
+                "name": "middle_03_l<middle_02_l<middle_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "195",
+            "deleted": true
+        },
+        "197": {
+            "link": {
+                "name": "ring_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "187",
+            "deleted": true
+        },
+        "198": {
+            "link": {
+                "name": "ring_02_l<ring_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "197",
+            "deleted": true
+        },
+        "199": {
+            "link": {
+                "name": "ring_03_l<ring_02_l<ring_01_l<hand_l<lowerarm_l<upperarm_l<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "198",
+            "deleted": true
+        },
+        "200": {
+            "link": {
+                "name": "sholder_pad_left<clavicle_l<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "184",
+            "deleted": true
+        },
+        "201": {
+            "link": {
+                "name": "clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "183",
+            "deleted": true
+        },
+        "202": {
+            "link": {
+                "name": "upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "201",
+            "deleted": true
+        },
+        "203": {
+            "link": {
+                "name": "lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "202",
+            "deleted": true
+        },
+        "204": {
+            "link": {
+                "name": "hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "203",
+            "deleted": true
+        },
+        "205": {
+            "link": {
+                "name": "thumb_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "204",
+            "deleted": true
+        },
+        "206": {
+            "link": {
+                "name": "thumb_02_r<thumb_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "205",
+            "deleted": true
+        },
+        "207": {
+            "link": {
+                "name": "thumb_03_r<thumb_02_r<thumb_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "206",
+            "deleted": true
+        },
+        "208": {
+            "link": {
+                "name": "index_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "204",
+            "deleted": true
+        },
+        "209": {
+            "link": {
+                "name": "index_02_r<index_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "208",
+            "deleted": true
+        },
+        "210": {
+            "link": {
+                "name": "index_03_r<index_02_r<index_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "209",
+            "deleted": true
+        },
+        "211": {
+            "link": {
+                "name": "middle_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "204",
+            "deleted": true
+        },
+        "212": {
+            "link": {
+                "name": "middle_02_r<middle_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "211",
+            "deleted": true
+        },
+        "213": {
+            "link": {
+                "name": "middle_03_r<middle_02_r<middle_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "212",
+            "deleted": true
+        },
+        "214": {
+            "link": {
+                "name": "ring_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "204",
+            "deleted": true
+        },
+        "215": {
+            "link": {
+                "name": "ring_02_r<ring_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "214",
+            "deleted": true
+        },
+        "216": {
+            "link": {
+                "name": "ring_03_r<ring_02_r<ring_01_r<hand_r<lowerarm_r<upperarm_r<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "215",
+            "deleted": true
+        },
+        "217": {
+            "link": {
+                "name": "sholder_pad_right<clavicle_r<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "201",
+            "deleted": true
+        },
+        "218": {
+            "link": {
+                "name": "neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "183",
+            "deleted": true
+        },
+        "219": {
+            "link": {
+                "name": "head<neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "218",
+            "deleted": true
+        },
+        "220": {
+            "link": {
+                "name": "pupil_right<head<neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "219",
+            "deleted": true
+        },
+        "221": {
+            "link": {
+                "name": "pupil_left<head<neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "219",
+            "deleted": true
+        },
+        "222": {
+            "link": {
+                "name": "hat<head<neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "219",
+            "deleted": true
+        },
+        "223": {
+            "link": {
+                "name": "face_guard<head<neck_01<spine_03<spine_02<spine_01<pelvis<root<Armature",
+                "file": "models\\knight.glb"
+            },
+            "parent": "219",
+            "deleted": true
+        },
+        "224": {
+            "link": {
+                "name": "Cube",
+                "file": "models\\knight.glb"
+            },
+            "deleted": true
+        },
+        "237": {
+            "link": {
+                "name": "chair1",
+                "file": "models\\chair1.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.1920889875227658e-7,
+                0.9999966,
+                0.0,
+                0.0,
+                -0.9999966,
+                -1.1920889875227658e-7,
+                0.0,
+                -1.4780392,
+                0.0,
+                0.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "Mesh.0",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "Cube.007",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "Cube.005",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "156": {
+            "link": {
+                "name": "Mesh.004",
+                "file": "models\\knight.glb"
+            }
+        },
+        "157": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\knight.glb"
+            }
+        },
+        "158": {
+            "link": {
+                "name": "Mesh.002",
+                "file": "models\\knight.glb"
+            }
+        },
+        "159": {
+            "link": {
+                "name": "Mesh.003",
+                "file": "models\\knight.glb"
+            }
+        },
+        "160": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\knight.glb"
+            }
+        },
+        "161": {
+            "link": {
+                "name": "Mesh.005",
+                "file": "models\\knight.glb"
+            }
+        },
+        "162": {
+            "link": {
+                "name": "Cube",
+                "file": "models\\knight.glb"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "chair1",
+                "file": "models\\chair1.glb"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "chair1.0",
+                "file": "models\\chair1.glb"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "57": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "texture_3",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "texture_6",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "texture_7",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "texture_8",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "152": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\knight.glb"
+            }
+        },
+        "153": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\knight.glb"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\chair1.glb"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\chair1.glb"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Ch15_1001_Normal",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Ch15_1001_Diffuse",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Ch15_1001_Glossiness",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Ch15_1002_Normal",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Ch15_1002_Diffuse",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "Ch15_1002_Glossiness",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "55": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Image_2",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "150": {
+            "link": {
+                "name": "human_knight",
+                "file": "models\\knight.glb"
+            }
+        },
+        "151": {
+            "link": {
+                "name": "human_knight_metal-human_knight_rough",
+                "file": "models\\knight.glb"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "wood",
+                "file": "models\\chair1.glb"
+            }
+        },
+        "230": {
+            "link": {
+                "name": "fabric2",
+                "file": "models\\chair1.glb"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Ch15_body",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Ch15_body1",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "KSR29sniperrifle",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "154": {
+            "link": {
+                "name": "knight_mat",
+                "file": "models\\knight.glb"
+            }
+        },
+        "155": {
+            "link": {
+                "name": "CubeMat",
+                "file": "models\\knight.glb"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "legs",
+                "file": "models\\chair1.glb"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "body",
+                "file": "models\\chair1.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "test-default",
+            "version": [
+                0,
+                8,
+                10
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        }
+    },
+    "animations": {
+        "146": {
+            "link": {
+                "name": "Shot",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "147": {
+            "link": {
+                "name": "Idle",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "148": {
+            "link": {
+                "name": "Walking",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "149": {
+            "link": {
+                "name": "Firing",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Dance",
+                "file": "models\\knight.glb"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "Die",
+                "file": "models\\knight.glb"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Look Around",
+                "file": "models\\knight.glb"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "Walking",
+                "file": "models\\knight.glb"
+            }
+        }
+    },
+    "skins": {
+        "74": {
+            "link": {
+                "name": "SwatGuy",
+                "file": "models\\swat-guy-rifle.glb"
+            }
+        },
+        "163": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\knight.glb"
+            }
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/swat-guy-rifle.glb",
+        "models/knight.glb",
+        "models/chair1.glb"
+    ]
+}
