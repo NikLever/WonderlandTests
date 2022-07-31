@@ -30,7 +30,7 @@ WL.registerComponent('MovePlayer', {
             
             this.tmpPos[1] += 2;
             
-            let rayhit = WL.physx.raycast(this.tmpPos, this.down, 1);
+            let rayhit = WL.physx.rayCast(this.tmpPos, this.down, 1);
             
             if (rayhit.hitCount>0){
                 this.object.setTranslationWorld(rayhit.locations[0]);
