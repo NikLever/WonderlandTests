@@ -23,14 +23,14 @@ WL.registerComponent('MovePlayer', {
         if (this.navmesh == null || this.physx == null || this.camera == null) return;
         if (this.getSelectPressed()){
             this.object.getTranslationWorld( this.tmpPos );
-            this.camera.getFoward( this.tmpVec );
+            this.camera.getForward( this.tmpVec );
 
             glMatrix.vec3.scale(this.tmpVec, this.tmpVec, dt * this.speed);
             glMatrix.vec3.add( this.tmpPos, this.tmpPos, this.tmpVec);
             
             this.tmpPos[1] += 2;
             
-            let rayhit = WL.physx.rayCast(this.tmpPos, this.down, 1);
+            let rayhit = WL.physics.rayCast(this.tmpPos, this.down, 255);
             
             if (rayhit.hitCount>0){
                 this.object.setTranslationWorld(rayhit.locations[0]);
